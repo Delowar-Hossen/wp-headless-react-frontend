@@ -1,0 +1,10 @@
+
+
+npx create-react-app frontend
+
+cd frontend
+npm start
+
+npm install axios
+
+https://tailwindcss.com/docs/guides/create-react-app
