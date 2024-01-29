@@ -19,13 +19,13 @@ function Navbar() {
 			    <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
 			        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
 			            <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="AimsBite Logo" />
-			            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">AimsBite</span>
+			            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> AimsBite </span>
 			        </Link>
 			        <div className="flex items-center space-x-6 rtl:space-x-reverse">
 			            {!authUser.token ? (
 		        		<>
-		        		<Link to="/login" className="text-sm  text-gray-600 dark:text-gray-500 hover:underline">Login</Link>
-		        		<Link to="/register" className="text-sm  text-gray-600 dark:text-gray-500 hover:underline">Register</Link>
+		        		<Link to="/login" className="text-sm  text-gray-600 dark:text-gray-500 hover:underline"> Login </Link>
+		        		<Link to="/register" className="text-sm  text-gray-600 dark:text-gray-500 hover:underline"> Register</Link>
 		        		</>
 		        		): (
 		        		<>

@@ -6,6 +6,7 @@ import Single from './Single';
 import Login from './Login';
 import Register from './Register';
 import AddPost from './AddPost';
+import Profile from './Profile';
 import Navbar from '../common/Navbar';
 
 import { useSelector } from 'react-redux';
@@ -27,7 +28,7 @@ function Pages() {
 	        	<Route path="/register" element={<Register />} />
 	        	<Route element={<ProtectedRoute authUser={authUser} />}>
 	        		<Route path="/add-post" element={<AddPost />} />
-	        		<Route path="/profile" element={<div> Profile Page </div>} />
+	        		<Route path="/profile" element={<Profile/>} />
 	        	</Route>
 	      	</Routes>
 		</>

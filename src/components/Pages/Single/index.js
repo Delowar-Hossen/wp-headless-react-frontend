@@ -26,7 +26,14 @@ function Single() {
 					{ Object.keys(post).length ? (
 						<div className="p-5">
 							<div>
-								<img  className="rounded-lg" src={ post.featured_src } />
+								{ post.featured_src ? (
+											<img className="rounded-lg" src={ post.featured_src } />
+
+										) : (
+											<img className="rounded-lg" src="https://via.placeholder.com/500" alt={post.title.rendered} />
+
+										)
+									}
 							</div>
 							<div>
 								<h1 className="text-2xl font-bold">
